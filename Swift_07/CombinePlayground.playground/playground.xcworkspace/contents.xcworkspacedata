@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:">
+      location = "self:/Users/kimhyelim/workspace/appschool/techit/Swift_07/CombinePlayground.playground">
    </FileRef>
 </Workspace>
