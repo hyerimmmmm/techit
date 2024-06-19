@@ -11,6 +11,7 @@
 		BF5890792C2169190042AED7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5890782C2169190042AED7 /* ContentView.swift */; };
 		BF58907B2C21691E0042AED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF58907A2C21691E0042AED7 /* Assets.xcassets */; };
 		BF58907E2C21691E0042AED7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF58907D2C21691E0042AED7 /* Preview Assets.xcassets */; };
+		BF5890852C225D9C0042AED7 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5890842C225D9C0042AED7 /* AuthenticationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BF5890782C2169190042AED7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BF58907A2C21691E0042AED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF58907D2C21691E0042AED7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF5890842C225D9C0042AED7 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				BF5890762C2169190042AED7 /* SignUpFormApp.swift */,
 				BF5890782C2169190042AED7 /* ContentView.swift */,
+				BF5890842C225D9C0042AED7 /* AuthenticationService.swift */,
 				BF58907A2C21691E0042AED7 /* Assets.xcassets */,
 				BF58907C2C21691E0042AED7 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5890852C225D9C0042AED7 /* AuthenticationService.swift in Sources */,
 				BF5890792C2169190042AED7 /* ContentView.swift in Sources */,
 				BF5890772C2169190042AED7 /* SignUpFormApp.swift in Sources */,
 			);
