@@ -44,8 +44,8 @@ class SignUpFormViewModel: ObservableObject {
     }()
     
     private lazy var isFormValidPublisher: AnyPublisher<Bool, Never> = {
-        Publishers.CombineLatest(isUsernameLengthValidPublisher, isPasswordValidPublisher)
-            .map { $0 && $1 }
+        Publishers.CombineLatest3(isUsernameLengthValidPublisher, $isUserNameAvailable, isPasswordValidPublisher)
+            .map { $0 && $1 && $2 }
             .eraseToAnyPublisher()
     }()
     
@@ -72,16 +72,16 @@ class SignUpFormViewModel: ObservableObject {
         isFormValidPublisher.assign(to: &$isValid)
         
         // 3글자 이상 입력하지 않았을 경우 경고 문구 활성화
-        isUsernameLengthValidPublisher.map { $0 ? "" : "Username must be at least three chracters!" }
-            .assign(to: &$usernameMessage)
+//        isUsernameLengthValidPublisher.map { $0 ? "" : "Username must be at least three chracters!" }
+//            .assign(to: &$usernameMessage)
         
-        Publishers.CombineLatest(isPasswordEmptyPublisher, isPasswordMatchingPublisher)
-            .map { isPasswordEmpty, isPasswordMatching in
-                if isPasswordEmpty {
-                    return "Password must be empty"
+        Publishers.CombineLatest(isUsernameLengthValidPublisher, $isUserNameAvailable)
+            .map { isUsernameLengthVaild, isUserNameAvailable in
+                if !isUsernameLengthVaild {
+                    return "Username must be at least three characters!"
                 }
-                else if !isPasswordMatching {
-                    return "Passwords do mot match"
+                else if !isUserNameAvailable {
+                    return "This username is already taken."
                 }
                 return ""
             }
@@ -97,7 +97,7 @@ struct ContentView: View {
             // username
             Section {
                 TextField("Username", text: $viewModel.username)
-                    .textInputAutocapitalization(.none)
+                    .textInputAutocapitalization(.never)
                     .autocorrectionDisabled()
             } footer: {
                 Text(viewModel.usernameMessage)
