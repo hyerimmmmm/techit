@@ -14,6 +14,8 @@
 		BFD1AD792C23AAE300E04205 /* SignUpFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1AD782C23AAE300E04205 /* SignUpFormViewModel.swift */; };
 		BFD1AD7B2C23AB4400E04205 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1AD7A2C23AB4400E04205 /* AuthenticationService.swift */; };
 		BFD1AD7D2C23AB5200E04205 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1AD7C2C23AB5200E04205 /* Helper.swift */; };
+		BFD1AD7F2C24048A00E04205 /* Publisher+Dump.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1AD7E2C24048A00E04205 /* Publisher+Dump.swift */; };
+		BFD1AD812C240BF700E04205 /* Publisher+Retry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1AD802C240BF700E04205 /* Publisher+Retry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		BFD1AD782C23AAE300E04205 /* SignUpFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormViewModel.swift; sourceTree = "<group>"; };
 		BFD1AD7A2C23AB4400E04205 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		BFD1AD7C2C23AB5200E04205 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		BFD1AD7E2C24048A00E04205 /* Publisher+Dump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Dump.swift"; sourceTree = "<group>"; };
+		BFD1AD802C240BF700E04205 /* Publisher+Retry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Retry.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				BFD1AD782C23AAE300E04205 /* SignUpFormViewModel.swift */,
 				BFD1AD7A2C23AB4400E04205 /* AuthenticationService.swift */,
 				BFD1AD7C2C23AB5200E04205 /* Helper.swift */,
+				BFD1AD7E2C24048A00E04205 /* Publisher+Dump.swift */,
+				BFD1AD802C240BF700E04205 /* Publisher+Retry.swift */,
 				BFD1AD6E2C23AACA00E04205 /* Assets.xcassets */,
 				BFD1AD702C23AACA00E04205 /* Preview Content */,
 			);
@@ -148,7 +154,9 @@
 			files = (
 				BFD1AD6D2C23AAC800E04205 /* ContentView.swift in Sources */,
 				BFD1AD6B2C23AAC800E04205 /* SignUpForm2App.swift in Sources */,
+				BFD1AD7F2C24048A00E04205 /* Publisher+Dump.swift in Sources */,
 				BFD1AD7D2C23AB5200E04205 /* Helper.swift in Sources */,
+				BFD1AD812C240BF700E04205 /* Publisher+Retry.swift in Sources */,
 				BFD1AD792C23AAE300E04205 /* SignUpFormViewModel.swift in Sources */,
 				BFD1AD7B2C23AB4400E04205 /* AuthenticationService.swift in Sources */,
 			);

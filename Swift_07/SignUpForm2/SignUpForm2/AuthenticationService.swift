@@ -45,18 +45,11 @@ struct AuthenticationService {
                 return (data, response)
             }
         return dataTaskPublisher
-            .tryCatch { error -> AnyPublisher<(data: Data, response: URLResponse), Error> in
+            .retry(10, withDelay: 3) { error in
                 if case APIError.serverError = error {
-                    return Just(Void())
-                        .delay(for: 3, scheduler: DispatchQueue.global())
-                        .flatMap { _ in
-                            return dataTaskPublisher
-                        }
-                        .print("before retry")
-                        .retry(10)
-                        .eraseToAnyPublisher()
+                    return true
                 }
-                throw error
+                return false
             }
             .map(\.data)
             .tryMap { data -> UserNameAvailableMessage in
