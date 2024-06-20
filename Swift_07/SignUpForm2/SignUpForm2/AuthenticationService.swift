@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 struct AuthenticationService {
-    func checkUserNameAvailablePublisher(username: String) -> AnyPublisher<Bool, Error> {
+    func checkUserNameAvailablePublisher(userName: String) -> AnyPublisher<Bool, Error> {
         guard let url = URL(string: "http://127.0.0.1:8080/isUserNameAvailable?username=\(username)") else {
             return Fail(error: APIError.invaildResponse).eraseToAnyPublisher()
         }
