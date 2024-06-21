@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  News
+//
+//  Created by 김혜림 on 6/21/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+CLIENT_ID = EynE3LTjfdiPpFxrEblq
+CLIENT_SECRET = yqDTj0a8mN

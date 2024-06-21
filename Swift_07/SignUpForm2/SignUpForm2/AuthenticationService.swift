@@ -45,7 +45,7 @@ struct AuthenticationService {
                 return (data, response)
             }
         return dataTaskPublisher
-            .retry(10, withDelay: 3) { error in
+            .retry(10, withBackoff: 3) { error in
                 if case APIError.serverError = error {
                     return true
                 }
