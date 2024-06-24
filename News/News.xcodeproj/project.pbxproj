@@ -12,6 +12,7 @@
 		BFD1AD932C2504FA00E04205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD1AD922C2504FA00E04205 /* Assets.xcassets */; };
 		BFD1AD962C2504FA00E04205 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD1AD952C2504FA00E04205 /* Preview Assets.xcassets */; };
 		BFD1AD9F2C2556D100E04205 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1AD9E2C2556D100E04205 /* NewsItem.swift */; };
+		BFD1ADA12C25590C00E04205 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1ADA02C25590C00E04205 /* NewsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		BFD1AD9C2C2551EF00E04205 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		BFD1AD9D2C25529800E04205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BFD1AD9E2C2556D100E04205 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		BFD1ADA02C25590C00E04205 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				BFD1AD8E2C2504F700E04205 /* NewsApp.swift */,
 				BFD1AD902C2504F700E04205 /* ContentView.swift */,
 				BFD1AD9E2C2556D100E04205 /* NewsItem.swift */,
+				BFD1ADA02C25590C00E04205 /* NewsService.swift */,
 				BFD1AD9C2C2551EF00E04205 /* Config.xcconfig */,
 				BFD1AD922C2504FA00E04205 /* Assets.xcassets */,
 				BFD1AD942C2504FA00E04205 /* Preview Content */,
@@ -146,6 +149,7 @@
 			files = (
 				BFD1AD912C2504F700E04205 /* ContentView.swift in Sources */,
 				BFD1AD9F2C2556D100E04205 /* NewsItem.swift in Sources */,
+				BFD1ADA12C25590C00E04205 /* NewsService.swift in Sources */,
 				BFD1AD8F2C2504F700E04205 /* NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
