@@ -7,18 +7,52 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SectionView: View {
+    var title: String
+    var words: [String]
+    
+    init(_ title: String, words: [String]) {
+        self.title = title
+        self.words = words
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Section(title) {
+            if words.isEmpty {
+                Text("(No items match your filer criteria)")
+            } else {
+                ForEach(words, id: \.self) { word in
+                    Text(word)
+                }
+            }
         }
-        .padding()
+    }
+}
+
+struct ContentView: View {
+    @StateObject var viewModel = LibraryViewModel()
+    
+    var body: some View {
+        List {
+            SectionView("", words: [viewModel.randomWord])
+            SectionView("Peter's Tips", words: viewModel.filteredTips)
+            SectionView("My favorite", words: viewModel.filteredFavorites)
+        }
+        .searchable(text: $viewModel.searchText)
+        .textInputAutocapitalization(.never)
+        .navigationTitle("Library")
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                Button(action: {}) {
+                    Image(systemName: "plus")
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    NavigationStack {
+        ContentView()
+    }
 }

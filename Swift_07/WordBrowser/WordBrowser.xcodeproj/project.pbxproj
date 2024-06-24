@@ -11,6 +11,7 @@
 		BFD1ADB52C29294700E04205 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1ADB42C29294700E04205 /* ContentView.swift */; };
 		BFD1ADB72C29294900E04205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD1ADB62C29294900E04205 /* Assets.xcassets */; };
 		BFD1ADBA2C29294900E04205 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD1ADB92C29294900E04205 /* Preview Assets.xcassets */; };
+		BFD1ADC32C292E2400E04205 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1ADC22C292E2400E04205 /* LibraryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		BFD1ADB92C29294900E04205 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BFD1ADC02C2929A700E04205 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		BFD1ADC12C2929EC00E04205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BFD1ADC22C292E2400E04205 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +55,11 @@
 		BFD1ADB12C29294700E04205 /* WordBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				BFD1ADC12C2929EC00E04205 /* Info.plist */,
 				BFD1ADB22C29294700E04205 /* WordBrowserApp.swift */,
 				BFD1ADB42C29294700E04205 /* ContentView.swift */,
+				BFD1ADC22C292E2400E04205 /* LibraryViewModel.swift */,
 				BFD1ADC02C2929A700E04205 /* Config.xcconfig */,
+				BFD1ADC12C2929EC00E04205 /* Info.plist */,
 				BFD1ADB62C29294900E04205 /* Assets.xcassets */,
 				BFD1ADB82C29294900E04205 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD1ADB52C29294700E04205 /* ContentView.swift in Sources */,
+				BFD1ADC32C292E2400E04205 /* LibraryViewModel.swift in Sources */,
 				BFD1ADB32C29294700E04205 /* WordBrowserApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
