@@ -31,6 +31,7 @@ struct SectionView: View {
 
 struct ContentView: View {
     @StateObject var viewModel = LibraryViewModel()
+    @State var isAddNewMordDialongPresented = false
     
     var body: some View {
         List {
@@ -41,10 +42,21 @@ struct ContentView: View {
         .searchable(text: $viewModel.searchText)
         .textInputAutocapitalization(.never)
         .navigationTitle("Library")
+        .refreshable {
+            await viewModel.refresh()
+        }
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
-                Button(action: {}) {
+                Button(action: { isAddNewMordDialongPresented.toggle() }) {
                     Image(systemName: "plus")
+                }
+            }
+        }
+        .sheet(isPresented: $isAddNewMordDialongPresented) {
+            NavigationStack {
+                AddWordView { word in
+                    print(word)
+                    viewModel.addFavorite(word)
                 }
             }
         }
