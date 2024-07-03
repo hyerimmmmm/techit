@@ -5,5 +5,6 @@
   Created by 김혜림 on 7/3/24.
   
 */
-"greeting-label" = "Hello, World";
+"greeting-label %@" = "Hello, World %@";
 "button-lable" = "Tab me";
+"placeholder-label" = "여기에 입력하세요";

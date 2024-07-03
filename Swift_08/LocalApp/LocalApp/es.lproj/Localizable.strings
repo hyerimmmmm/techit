@@ -5,5 +5,6 @@
   Created by 김혜림 on 7/3/24.
   
 */
-"greeting-label" = "Hello Mundo";
+"greeting-label %@" = "Hello Mundo %@";
 "button-lable" = "Tocame";
+"placeholder-label" = "여기에 입력하세요";

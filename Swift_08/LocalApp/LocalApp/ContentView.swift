@@ -9,14 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     @State var changeColor = false
+    @State var message = ""
+    
+    var placeHolder: LocalizedStringKey = "placeholder-label"
     
     var body: some View {
         VStack {
-            Text(LocalizedStringKey("greeting-label"))
-            Text("greeting-label")
+            Text(LocalizedStringKey("greeting-label \(message)"))
+            Text("greeting-label \(message)")
             Button("button-label") {
                 changeColor.toggle()
             }
+            TextField(placeHolder, text: $message)
         }
         .padding()
         .background(changeColor ? Color.red : Color.yellow)
