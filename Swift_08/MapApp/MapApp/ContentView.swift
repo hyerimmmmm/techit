@@ -19,11 +19,19 @@ extension CLLocationCoordinate2D {
 
 struct IdentifiablePlace: Identifiable {
     let id: UUID
+    let name: String
     let location: CLLocationCoordinate2D
     
     init(id: UUID = UUID(), lat: Double, long: Double) {
         self.id = id
+        self.name = ""
         self.location = CLLocationCoordinate2D(latitude: lat, longitude: long)
+    }
+    
+    init(id: UUID = UUID(), _ name: String, _ location: CLLocationCoordinate2D) {
+        self.id = id
+        self.name = name
+        self.location = location
     }
 }
 
@@ -40,21 +48,31 @@ struct ContentView: View {
                                                       ("개선문", .arcDeTriomphe),
                                                       ("사크레쾨르 대성당", .sacreCoeur)]
     let place = IdentifiablePlace(lat: 48.856613, long: 2.352222)
+    let identifiablePlaces = [IdentifiablePlace("에펠탑", .eiffelTower),
+                              IdentifiablePlace("루브르 박물관", .louvre),
+                              IdentifiablePlace("노트르담 대성당", .notreDame),
+                              IdentifiablePlace("개선문", .arcDeTriomphe),
+                              IdentifiablePlace("사크레쾨르 대성당", .sacreCoeur)]
     
     var body: some View {
         VStack {
             // ios 17 이전 코드
-            Map(coordinateRegion: $region, annotationItems: [place]) { place in
-                MapMarker(coordinate: place.location, tint: Color.purple)
+            Map(coordinateRegion: $region, annotationItems: identifiablePlaces) { place in
+                // MapMarker(coordinate: place.location, tint: Color.purple)
+                MapPin(coordinate: place.location, tint: Color.purple)
             }
             
             // ios 17 이후 코드
             Map(position: $position) {
+                MapPolygon(coordinates: [.paris, .eiffelTower, .louvre])
+                    .stroke(.purple.opacity(0.7), lineWidth: 5)
+                    .foregroundStyle(.purple.opacity(0.7))
+                
                 ForEach(places, id: \.0) { place in
                     Annotation(place.0, coordinate: place.1) {
                         Image(systemName: "mappin.circle.fill")
                             .foregroundStyle(.purple)
-                            .background(.white)
+                            // .background(.white)
                             .clipShape(Circle())
                     }
                 }
