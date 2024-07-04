@@ -19,6 +19,7 @@ struct ContentView: View {
         }
         .navigationBarTitleDisplayMode(.automatic)
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Look for a pet") {
+            // 검색어 제안
             Text("Singing").searchCompletion("Canary")
             Text("Croaking").searchCompletion("Frog")
             Text("Grumpy").searchCompletion("Cat")
