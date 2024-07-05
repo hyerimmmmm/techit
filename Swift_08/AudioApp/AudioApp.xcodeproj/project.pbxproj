@@ -11,6 +11,8 @@
 		BFF84FAE2C377E7700CA5808 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84FAD2C377E7700CA5808 /* ContentView.swift */; };
 		BFF84FB02C377E7A00CA5808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF84FAF2C377E7A00CA5808 /* Assets.xcassets */; };
 		BFF84FB32C377E7A00CA5808 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF84FB22C377E7A00CA5808 /* Preview Assets.xcassets */; };
+		BFF84FBA2C377FBB00CA5808 /* Small World.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFF84FB92C377FBB00CA5808 /* Small World.mp3 */; };
+		BFF84FBC2C37800700CA5808 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84FBB2C37800700CA5808 /* AudioPlayerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		BFF84FAD2C377E7700CA5808 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BFF84FAF2C377E7A00CA5808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFF84FB22C377E7A00CA5808 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFF84FB92C377FBB00CA5808 /* Small World.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Small World.mp3"; sourceTree = "<group>"; };
+		BFF84FBB2C37800700CA5808 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,9 @@
 			children = (
 				BFF84FAB2C377E7700CA5808 /* AudioAppApp.swift */,
 				BFF84FAD2C377E7700CA5808 /* ContentView.swift */,
+				BFF84FBB2C37800700CA5808 /* AudioPlayerManager.swift */,
 				BFF84FAF2C377E7A00CA5808 /* Assets.xcassets */,
+				BFF84FB92C377FBB00CA5808 /* Small World.mp3 */,
 				BFF84FB12C377E7A00CA5808 /* Preview Content */,
 			);
 			path = AudioApp;
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF84FB32C377E7A00CA5808 /* Preview Assets.xcassets in Resources */,
+				BFF84FBA2C377FBB00CA5808 /* Small World.mp3 in Resources */,
 				BFF84FB02C377E7A00CA5808 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF84FAE2C377E7700CA5808 /* ContentView.swift in Sources */,
+				BFF84FBC2C37800700CA5808 /* AudioPlayerManager.swift in Sources */,
 				BFF84FAC2C377E7700CA5808 /* AudioAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
