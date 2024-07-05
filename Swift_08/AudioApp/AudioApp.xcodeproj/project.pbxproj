@@ -7,26 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BFF84F8E2C36807D00CA5808 /* LocationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84F8D2C36807D00CA5808 /* LocationAppApp.swift */; };
-		BFF84F902C36807D00CA5808 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84F8F2C36807D00CA5808 /* ContentView.swift */; };
-		BFF84F922C36808000CA5808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF84F912C36808000CA5808 /* Assets.xcassets */; };
-		BFF84F952C36808000CA5808 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF84F942C36808000CA5808 /* Preview Assets.xcassets */; };
-		BFF84F9C2C3683DD00CA5808 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84F9B2C3683DD00CA5808 /* MapViewModel.swift */; };
-		BFF84F9E2C36904700CA5808 /* PlaceInfoPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84F9D2C36904700CA5808 /* PlaceInfoPanel.swift */; };
+		BFF84FAC2C377E7700CA5808 /* AudioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84FAB2C377E7700CA5808 /* AudioAppApp.swift */; };
+		BFF84FAE2C377E7700CA5808 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84FAD2C377E7700CA5808 /* ContentView.swift */; };
+		BFF84FB02C377E7A00CA5808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF84FAF2C377E7A00CA5808 /* Assets.xcassets */; };
+		BFF84FB32C377E7A00CA5808 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF84FB22C377E7A00CA5808 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BFF84F8A2C36807D00CA5808 /* LocationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFF84F8D2C36807D00CA5808 /* LocationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAppApp.swift; sourceTree = "<group>"; };
-		BFF84F8F2C36807D00CA5808 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BFF84F912C36808000CA5808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BFF84F942C36808000CA5808 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BFF84F9B2C3683DD00CA5808 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
-		BFF84F9D2C36904700CA5808 /* PlaceInfoPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInfoPanel.swift; sourceTree = "<group>"; };
+		BFF84FA82C377E7700CA5808 /* AudioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF84FAB2C377E7700CA5808 /* AudioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAppApp.swift; sourceTree = "<group>"; };
+		BFF84FAD2C377E7700CA5808 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFF84FAF2C377E7A00CA5808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFF84FB22C377E7A00CA5808 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BFF84F872C36807D00CA5808 /* Frameworks */ = {
+		BFF84FA52C377E7700CA5808 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,39 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BFF84F812C36807D00CA5808 = {
+		BFF84F9F2C377E7700CA5808 = {
 			isa = PBXGroup;
 			children = (
-				BFF84F8C2C36807D00CA5808 /* LocationApp */,
-				BFF84F8B2C36807D00CA5808 /* Products */,
+				BFF84FAA2C377E7700CA5808 /* AudioApp */,
+				BFF84FA92C377E7700CA5808 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BFF84F8B2C36807D00CA5808 /* Products */ = {
+		BFF84FA92C377E7700CA5808 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFF84F8A2C36807D00CA5808 /* LocationApp.app */,
+				BFF84FA82C377E7700CA5808 /* AudioApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BFF84F8C2C36807D00CA5808 /* LocationApp */ = {
+		BFF84FAA2C377E7700CA5808 /* AudioApp */ = {
 			isa = PBXGroup;
 			children = (
-				BFF84F8D2C36807D00CA5808 /* LocationAppApp.swift */,
-				BFF84F8F2C36807D00CA5808 /* ContentView.swift */,
-				BFF84F9D2C36904700CA5808 /* PlaceInfoPanel.swift */,
-				BFF84F9B2C3683DD00CA5808 /* MapViewModel.swift */,
-				BFF84F912C36808000CA5808 /* Assets.xcassets */,
-				BFF84F932C36808000CA5808 /* Preview Content */,
+				BFF84FAB2C377E7700CA5808 /* AudioAppApp.swift */,
+				BFF84FAD2C377E7700CA5808 /* ContentView.swift */,
+				BFF84FAF2C377E7A00CA5808 /* Assets.xcassets */,
+				BFF84FB12C377E7A00CA5808 /* Preview Content */,
 			);
-			path = LocationApp;
+			path = AudioApp;
 			sourceTree = "<group>";
 		};
-		BFF84F932C36808000CA5808 /* Preview Content */ = {
+		BFF84FB12C377E7A00CA5808 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				BFF84F942C36808000CA5808 /* Preview Assets.xcassets */,
+				BFF84FB22C377E7A00CA5808 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -76,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BFF84F892C36807D00CA5808 /* LocationApp */ = {
+		BFF84FA72C377E7700CA5808 /* AudioApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFF84F982C36808000CA5808 /* Build configuration list for PBXNativeTarget "LocationApp" */;
+			buildConfigurationList = BFF84FB62C377E7A00CA5808 /* Build configuration list for PBXNativeTarget "AudioApp" */;
 			buildPhases = (
-				BFF84F862C36807D00CA5808 /* Sources */,
-				BFF84F872C36807D00CA5808 /* Frameworks */,
-				BFF84F882C36807D00CA5808 /* Resources */,
+				BFF84FA42C377E7700CA5808 /* Sources */,
+				BFF84FA52C377E7700CA5808 /* Frameworks */,
+				BFF84FA62C377E7700CA5808 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LocationApp;
-			productName = LocationApp;
-			productReference = BFF84F8A2C36807D00CA5808 /* LocationApp.app */;
+			name = AudioApp;
+			productName = AudioApp;
+			productReference = BFF84FA82C377E7700CA5808 /* AudioApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BFF84F822C36807D00CA5808 /* Project object */ = {
+		BFF84FA02C377E7700CA5808 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					BFF84F892C36807D00CA5808 = {
+					BFF84FA72C377E7700CA5808 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = BFF84F852C36807D00CA5808 /* Build configuration list for PBXProject "LocationApp" */;
+			buildConfigurationList = BFF84FA32C377E7700CA5808 /* Build configuration list for PBXProject "AudioApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,44 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = BFF84F812C36807D00CA5808;
-			productRefGroup = BFF84F8B2C36807D00CA5808 /* Products */;
+			mainGroup = BFF84F9F2C377E7700CA5808;
+			productRefGroup = BFF84FA92C377E7700CA5808 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BFF84F892C36807D00CA5808 /* LocationApp */,
+				BFF84FA72C377E7700CA5808 /* AudioApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BFF84F882C36807D00CA5808 /* Resources */ = {
+		BFF84FA62C377E7700CA5808 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF84F952C36808000CA5808 /* Preview Assets.xcassets in Resources */,
-				BFF84F922C36808000CA5808 /* Assets.xcassets in Resources */,
+				BFF84FB32C377E7A00CA5808 /* Preview Assets.xcassets in Resources */,
+				BFF84FB02C377E7A00CA5808 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BFF84F862C36807D00CA5808 /* Sources */ = {
+		BFF84FA42C377E7700CA5808 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF84F9E2C36904700CA5808 /* PlaceInfoPanel.swift in Sources */,
-				BFF84F902C36807D00CA5808 /* ContentView.swift in Sources */,
-				BFF84F8E2C36807D00CA5808 /* LocationAppApp.swift in Sources */,
-				BFF84F9C2C3683DD00CA5808 /* MapViewModel.swift in Sources */,
+				BFF84FAE2C377E7700CA5808 /* ContentView.swift in Sources */,
+				BFF84FAC2C377E7700CA5808 /* AudioAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		BFF84F962C36808000CA5808 /* Debug */ = {
+		BFF84FB42C377E7A00CA5808 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		BFF84F972C36808000CA5808 /* Release */ = {
+		BFF84FB52C377E7A00CA5808 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -272,14 +264,14 @@
 			};
 			name = Release;
 		};
-		BFF84F992C36808000CA5808 /* Debug */ = {
+		BFF84FB72C377E7A00CA5808 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LocationApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AudioApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -292,7 +284,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.LocationApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.AudioApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -300,14 +292,14 @@
 			};
 			name = Debug;
 		};
-		BFF84F9A2C36808000CA5808 /* Release */ = {
+		BFF84FB82C377E7A00CA5808 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LocationApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AudioApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -320,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.LocationApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.AudioApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -331,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BFF84F852C36807D00CA5808 /* Build configuration list for PBXProject "LocationApp" */ = {
+		BFF84FA32C377E7700CA5808 /* Build configuration list for PBXProject "AudioApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BFF84F962C36808000CA5808 /* Debug */,
-				BFF84F972C36808000CA5808 /* Release */,
+				BFF84FB42C377E7A00CA5808 /* Debug */,
+				BFF84FB52C377E7A00CA5808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFF84F982C36808000CA5808 /* Build configuration list for PBXNativeTarget "LocationApp" */ = {
+		BFF84FB62C377E7A00CA5808 /* Build configuration list for PBXNativeTarget "AudioApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BFF84F992C36808000CA5808 /* Debug */,
-				BFF84F9A2C36808000CA5808 /* Release */,
+				BFF84FB72C377E7A00CA5808 /* Debug */,
+				BFF84FB82C377E7A00CA5808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BFF84F822C36807D00CA5808 /* Project object */;
+	rootObject = BFF84FA02C377E7700CA5808 /* Project object */;
 }
