@@ -17,6 +17,7 @@
 		BF1C5E992C4DEDBF005A99BB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF1C5E982C4DEDBF005A99BB /* FirebaseFirestoreSwift */; };
 		BF1C5E9B2C4DF8B9005A99BB /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C5E9A2C4DF8B9005A99BB /* Note.swift */; };
 		BF1C5E9D2C4DF8FA005A99BB /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C5E9C2C4DF8FA005A99BB /* NoteViewModel.swift */; };
+		BF1C5E9F2C4DFC21005A99BB /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C5E9E2C4DFC21005A99BB /* FormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BF1C5E912C4DEADE005A99BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF1C5E9A2C4DF8B9005A99BB /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		BF1C5E9C2C4DF8FA005A99BB /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		BF1C5E9E2C4DFC21005A99BB /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				BF1C5E832C4DE8A6005A99BB /* NoteAppApp.swift */,
 				BF1C5E852C4DE8A6005A99BB /* ContentView.swift */,
+				BF1C5E9E2C4DFC21005A99BB /* FormView.swift */,
 				BF1C5E9A2C4DF8B9005A99BB /* Note.swift */,
 				BF1C5E9C2C4DF8FA005A99BB /* NoteViewModel.swift */,
 				BF1C5E872C4DE8AA005A99BB /* Assets.xcassets */,
@@ -163,6 +166,7 @@
 			files = (
 				BF1C5E9D2C4DF8FA005A99BB /* NoteViewModel.swift in Sources */,
 				BF1C5E862C4DE8A6005A99BB /* ContentView.swift in Sources */,
+				BF1C5E9F2C4DFC21005A99BB /* FormView.swift in Sources */,
 				BF1C5E842C4DE8A6005A99BB /* NoteAppApp.swift in Sources */,
 				BF1C5E9B2C4DF8B9005A99BB /* Note.swift in Sources */,
 			);
