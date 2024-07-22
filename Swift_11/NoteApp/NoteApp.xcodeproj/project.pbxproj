@@ -18,6 +18,7 @@
 		BF1C5E9B2C4DF8B9005A99BB /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C5E9A2C4DF8B9005A99BB /* Note.swift */; };
 		BF1C5E9D2C4DF8FA005A99BB /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C5E9C2C4DF8FA005A99BB /* NoteViewModel.swift */; };
 		BF1C5E9F2C4DFC21005A99BB /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C5E9E2C4DFC21005A99BB /* FormView.swift */; };
+		BF1C5EA12C4E2423005A99BB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C5EA02C4E2423005A99BB /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BF1C5E9A2C4DF8B9005A99BB /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		BF1C5E9C2C4DF8FA005A99BB /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		BF1C5E9E2C4DFC21005A99BB /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		BF1C5EA02C4E2423005A99BB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				BF1C5E832C4DE8A6005A99BB /* NoteAppApp.swift */,
 				BF1C5E852C4DE8A6005A99BB /* ContentView.swift */,
+				BF1C5EA02C4E2423005A99BB /* DetailView.swift */,
 				BF1C5E9E2C4DFC21005A99BB /* FormView.swift */,
 				BF1C5E9A2C4DF8B9005A99BB /* Note.swift */,
 				BF1C5E9C2C4DF8FA005A99BB /* NoteViewModel.swift */,
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1C5E9D2C4DF8FA005A99BB /* NoteViewModel.swift in Sources */,
+				BF1C5EA12C4E2423005A99BB /* DetailView.swift in Sources */,
 				BF1C5E862C4DE8A6005A99BB /* ContentView.swift in Sources */,
 				BF1C5E9F2C4DFC21005A99BB /* FormView.swift in Sources */,
 				BF1C5E842C4DE8A6005A99BB /* NoteAppApp.swift in Sources */,

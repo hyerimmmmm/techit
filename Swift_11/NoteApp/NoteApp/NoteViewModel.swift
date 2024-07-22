@@ -10,6 +10,7 @@ import FirebaseFirestore
 
 class NoteViewModel: ObservableObject {
     @Published var notes = [Note]()
+    @Published var selectednote = Note()
     
     private var databaseReference = Firestore.firestore().collection("Notes")
     
@@ -27,6 +28,16 @@ class NoteViewModel: ObservableObject {
             
             self.notes = documents.compactMap { docSnap -> Note? in
                 return try? docSnap.data(as: Note.self)
+            }
+        }
+    }
+    
+    func updateData(title: String, id: String) {
+        databaseReference.document(id).updateData(["title": title]) { error in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                print("Note updated successfully")
             }
         }
     }
